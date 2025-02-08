@@ -1,0 +1,40 @@
+How to Run
+
+Run Backend:
+
+bash
+
+cd backend
+docker build -t jobverifier-backend .
+docker run -p 5000:5000 jobverifier-backend
+
+
+Run Frontend:
+
+bash
+
+python frontend/main.py
+
+Run Everything with Docker Compose:
+
+bash
+
+chmod +x build.sh
+./build.sh
+
+docker-compose ps
+
+
+Check if EXE was created
+
+docker exec -it jobverifier-frontend bash
+ls /app/dist/
+
+ex: main.exe
+
+
+copy 
+docker cp jobverifier-frontend:/app/dist/main.exe .
+
+run
+./main.exe
