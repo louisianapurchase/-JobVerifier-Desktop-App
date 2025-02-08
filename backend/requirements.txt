@@ -1,0 +1,6 @@
+Flask
+requests
+beautifulsoup4
+bs4
+scraper
+PyQt5.QtWidgets

@@ -1,0 +1,2 @@
+app_name: JobVerifier
+backend_url: "http://localhost:5000"
