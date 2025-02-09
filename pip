@@ -1,0 +1,7 @@
+      PID    PPID    PGID     WINPID   TTY         UID    STIME COMMAND
+      327     246     327       9996  cons0     197611 16:56:22 /usr/bin/bash
+      331     328     327      20608  cons0     197611 16:56:22 /c/Program Files/Docker/Docker/resources/bin/docker-compose
+      246       1     246      20372  cons0     197611 16:55:55 /usr/bin/bash
+      430     332     430      21816  cons1     197611 16:57:30 /usr/bin/PS
+      328     327     327      11752  cons0     197611 16:56:22 /usr/bin/sh
+      332       1     332       7448  cons1     197611 16:57:26 /usr/bin/bash

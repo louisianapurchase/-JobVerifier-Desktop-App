@@ -3,3 +3,6 @@ requests
 beautifulsoup4
 bs4
 scraper
+pyinstaller
+PyQt5
+PyQt5-sip
