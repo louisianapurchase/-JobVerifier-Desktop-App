@@ -18,23 +18,20 @@ python frontend/main.py
 Run Everything with Docker Compose:
 
 bash
-
+cd deployment
 chmod +x build.sh
 ./build.sh
-docker-compose up
-docker-compose ps
-
 
 Check if EXE was created
 
-docker exec -it jobverifier-frontend bash
+docker exec -it jobverifier-desktop-app-frontend-1 bash
 ls /app/dist/
 
 ex: main.exe
 
 
 copy 
-docker cp jobverifier-frontend:/app/dist/main.exe .
+docker cp jobverifier-desktop-app-frontend-1:/app/dist/main.exe .
 
 run
 ./main.exe

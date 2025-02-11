@@ -1,11 +1,18 @@
-#version: '3.8'
 services:
+  frontend:
+    build: 
+      context: ./frontend  # Specify frontend directory
+      dockerfile: Dockerfile
+    volumes:
+      - ./frontend:/app  # Mount only frontend folder
+    ports:
+      - "8000:8000"
+
   backend:
-    build: ./backend
+    build:
+      context: ./backend  # Specify backend directory
+      dockerfile: Dockerfile
+    volumes:
+      - ./backend:/app  # Mount only backend folder
     ports:
       - "5000:5000"
-
-  frontend:
-    build: ./frontend
-    depends_on:
-      - backend
